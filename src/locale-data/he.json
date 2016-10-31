@@ -1,0 +1,16 @@
+{
+    "events.title": "title",
+    "events.date": "date",
+    "events.eventlocation": "Event location",
+    "events.ticketsales": "Number of ticket sales",
+    "events.status": "status",
+    "events.action": "action",
+    "events.active": "active",
+    "events.inactive": "inactive",
+    "events.canceled": "canceled",
+    "events.deleted": "deleted",
+    "events.merged": "merged",
+    "events.draft": "draft",
+    "events.all": "all",
+    "events.search": "search"
+}
