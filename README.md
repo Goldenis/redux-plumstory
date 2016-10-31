@@ -1,24 +1,18 @@
-###DASHBOARD APP
 
-###STRUCTURE
-Application located in `/src` directory  
-`/actions` - Action functions and const for reducers  
-`/reducers` - Reducers  
-`/helpers`  - anything that will be helpful  
-`/api`      - some middlewares (TODO: Maybe change dir name to /middleware)
-`/components` - helpful components  
-  UI - widgets, blocks, any reusable components  
-  Common - layout components via Header, Footer  
-  Any else only for components  
+# plumsystory (plumsystory)
 
-###DEVELOPMENT ENV
-For start dev mode just use in console:
+> ...
+
+## Running your project
+
+The generated project includes a development server on port `9001`, which will rebuild the app whenever you change application code. To start the server, run:
+
+```bash
+$ npm start
 ```
-npm start
+
+To build for production, this command will output optimized production code:
+
+```bash
+$ npm run build
 ```
-###PRODUCTION/SERVER ENV
-For start in production mode use:
-```
-npm run server
-```
-p.s. Change server ip in `package.json` file for production mode
