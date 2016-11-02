@@ -1,11 +1,12 @@
 {
-	"name": "plumsystory",
-	"version": "0.1.0",
-	"scripts": {
-		"start": "node dev-server.js",
-		"build": "webpack -p --config webpack.prod.config.js"
-	},
+  "name": "plumsystory",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node dev-server.js",
+    "build": "webpack -p --config webpack.prod.config.js"
+  },
   "dependencies": {
+    "@comynli/store": "^0.1.0",
     "classnames": "^2.2.3",
     "core-decorators": "^0.12.2",
     "history": "^1.9.0",
@@ -16,6 +17,7 @@
     "querystring": "^0.2.0",
     "react": "^0.14.8",
     "react-addons-css-transition-group": "^0.14.8",
+    "react-bootstrap": "^0.30.6",
     "react-document-title": "^2.0.1",
     "react-dom": "^0.14.8",
     "react-notification-system": "^0.2.7",
@@ -24,10 +26,10 @@
     "react-router": "^1.0.0",
     "react-tap-event-plugin": "^0.2.2",
     "redux": "^3.4.0",
+    "redux-api-middleware": "^1.0.2",
     "redux-logger": "^2.0.2",
     "redux-router": "^1.0.0-beta8",
     "redux-thunk": "^0.1.0",
-    "@comynli/store": "^0.1.0",
     "webpack": "^1.12.15",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.10.0"

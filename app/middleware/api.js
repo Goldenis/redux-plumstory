@@ -7,6 +7,7 @@ import * as AuthSettings from '../authentication/settings';
 export const PAYLOAD = Symbol('API_PAYLOAD');
 export const API_REQUEST_INIT = 'API_REQUEST_INIT';
 export const UNAUTHORIZED = 'UNAUTHORIZED';
+export const AUTHORIZED = 'AUTHORIZED';
 export const FORBIDDEN = 'FORBIDDEN';
 
 function call(endpoint, params, options, token = null) {

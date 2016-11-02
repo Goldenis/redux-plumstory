@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {pushState} from 'redux-router';
 import NotificationSystem from 'react-notification-system';
 import * as Notification from '../actions/notification';
+import { Row, Col, Button } from 'react-bootstrap'
 
 @connect(state => {
   return {global: state.global};
@@ -18,11 +19,17 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.ns = null;
+    this.handleSigninClick = this.handleSigninClick.bind(this)
   }
 
   componentDidMount() {
     this.ns = this.refs.ns;
   }
+
+  handleSigninClick(e) {
+    console.log('handleSigninClick');
+    this.props.pushState(null, '/signin');
+  };
 
   render() {
     const { children } = this.props;
@@ -50,6 +57,11 @@ export default class App extends React.Component {
 
     return (
       <div>
+        <div>
+          <Button bsStyle="default" onClick={this.handleSigninClick}>Signin</Button>
+          <Button bsStyle="default" onClick={ () => {this.props.pushState(null, '/profile');} }>Profile</Button>
+          <Button bsStyle="default" onClick={ () => {this.props.pushState(null, '/info');} }>About Us</Button>
+        </div>
         {children}
         <NotificationSystem ref="ns" />
       </div>

@@ -15,7 +15,7 @@ export const TOKEN_HEADER = 'X-Authorization-Token';
 // const PASSPORT_URL = 'http://192.168.67.27/authorize';
 
 
-export const LOGIN_URL = '/login';
+export const LOGIN_URL = '/signin';
 
 // export const LOGIN_URL = () => {
 //   const params = {
